@@ -6,7 +6,8 @@ import Image from 'react-bootstrap/Image';
 function Catalog() {
     return (
       <div id="catalog" className="catalog">
-        <h2>Our Catalog</h2>
+        <h2>Catalog</h2>
+        <p>Search by Product</p>
         <Container className="ex">
           <Row>
             <Col md={3} className="catalog-cell">
