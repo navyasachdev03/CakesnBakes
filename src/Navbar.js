@@ -13,10 +13,12 @@ function Navbar() {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#catalog">Catalog</a>
-        <a href="#order">Order</a>
+        <a href="#account">Account</a>
       </div>
     </div>
+
   );
 }
 
 export default Navbar;
+
