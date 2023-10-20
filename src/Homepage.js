@@ -1,16 +1,17 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
-import { FaBars } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Image from 'react-bootstrap/Image';
 
-function Homepage() {
+const Homepage = ({user}) => {
+  const homeRef = useRef(null);
   return (
-    <div id="home">
+    <div id="home" ref={homeRef}>
       <Container>
         <Row>
           <Col>
+            {user && <h3>Hello {user}</h3>}
             <h1>Welcome to Cakes'n'Bakes</h1>
             <p>A home of fresh baking</p>
           </Col>
@@ -43,8 +44,11 @@ function Homepage() {
           </Col>
         </Row>
       </Container>
+
+
     </div>
   );
 }
 
 export default Homepage;
+
