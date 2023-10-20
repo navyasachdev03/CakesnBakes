@@ -4,12 +4,12 @@
 }
   
 .ex1{
-    margin-left: 250px;
+    margin-left: 350px;
 }
 
 .about-cell {
-    height: 400px;
-    width: 350px;
+    height: 450px;
+    width: 300px;
     background-color: white;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -23,6 +23,14 @@
     transform: scale(1.02);
     cursor: pointer;
 }
+  
+
+.about-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+  
   
 
 .about-image {
