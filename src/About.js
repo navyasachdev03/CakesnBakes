@@ -8,14 +8,14 @@ function About() {
     <div id="about" className="about">
       <Container className="ex1">
         <Row>
-          <Col md={6} className="about-cell">
+          <Col md={4} className="about-cell">
             <Image src="a1.avif" className="about-image" />
           </Col>
-          <Col md={6} className="about-cell">
-            <h2>From the Baker</h2>
+          <Col md={4} className="about-cell">
+            <h2>From the Admin</h2>
             <p>
-                Welcome to Cakes'n'Bakes, where we turn moments into memories with our delectable creations.
-                Founded with a passion for baking, we pour heart and soul into every product we craft. From
+                Welcome to Cakes'n'Bakes, where we turn moments into memories with delectable creations.
+                Founded with a passion for baking, we pour heart and soul into every product we offer. From
                 classic confectionaries to innovative delights, our team ensures each bite is an exquisite
                 experience. With a commitment to quality ingredients and a sprinkle of creativity, we aim to
                 make your celebrations truly special. Join us in this sweet journey to and let's create
@@ -24,7 +24,7 @@ function About() {
           </Col>
         </Row>
         <Row>
-          <Col md={6} className="about-cell">
+          <Col md={4} className="about-cell">
             <h2>Our Products</h2>
             <p>
                 At Cakes'n'Bakes, we offer a delightful array of freshly baked products to satisy every palate. 
@@ -35,7 +35,7 @@ function About() {
                 catalog and let us bring some sweetness to your life!
             </p>
           </Col>
-          <Col md={6} className="about-cell">
+          <Col md={4} className="about-cell">
             <Image src="a2.avif" className="about-image" />
           </Col>
         </Row>
@@ -45,4 +45,6 @@ function About() {
 }
 
 export default About;
+
+
 
