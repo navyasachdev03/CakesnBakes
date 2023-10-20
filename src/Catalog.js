@@ -10,47 +10,47 @@ function Catalog() {
         <p>Search by Product</p>
         <Container className="ex">
           <Row>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
               <Image src="ca1.jpg" className="catalog-image" />
-              <div className="text-overlay">$150</div>
+              <div className="text-overlay">Starting from<br/>$150</div>
               <p>Customised Cakes</p>
             </Col>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
                 <Image src="ca2.jpg" className="catalog-image" />
-                <div className="text-overlay">$60</div>
+                <div className="text-overlay">Starting from<br/>$60</div>
                 <p>Pastries</p>
             </Col>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
               <Image src="ca3.jpg" className="catalog-image" />
-              <div className="text-overlay">$10</div>
+              <div className="text-overlay">Starting from<br/>$10</div>
               <p>Cookies</p>
             </Col>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
                 <Image src="ca4.jpg" className="catalog-image" />
-                <div className="text-overlay">$25</div>
+                <div className="text-overlay">Starting from<br/>$25</div>
                 <p>Cupcakes</p>
             </Col>
           </Row>
 
           <Row>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
               <Image src="ca5.jpg" className="catalog-image" />
-              <div className="text-overlay">$20</div>
+              <div className="text-overlay">Starting from<br/>$20</div>
               <p>Tarts</p>
             </Col>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
                 <Image src="ca6.jpg" className="catalog-image" />
-                <div className="text-overlay">$40</div>
+                <div className="text-overlay">Starting from<br/>$40</div>
                 <p>Macarons</p>
             </Col>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
               <Image src="ca7.jpg" className="catalog-image" />
-              <div className="text-overlay">$10</div>
+              <div className="text-overlay">Starting from<br/>$10</div>
               <p>Breads</p>
             </Col>
-            <Col md={3} className="catalog-cell">
+            <Col md={2} className="catalog-cell">
                 <Image src="ca8.jpg" className="catalog-image" />
-                <div className="text-overlay">$10</div>
+                <div className="text-overlay">Starting from<br/>$10</div>
                 <p>Croissants</p>
             </Col>
           </Row>
@@ -61,3 +61,4 @@ function Catalog() {
   }
   
   export default Catalog;
+
