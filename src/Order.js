@@ -6,8 +6,9 @@ import Image from 'react-bootstrap/Image';
 function Order() {
   const [Data, setData] = useState({
     name: '',
-    email: '',
+    contact: '',
     address: '',
+    bakery: '',
     message: '',
   });
 
@@ -20,6 +21,8 @@ function Order() {
     e.preventDefault();
     alert('Thankyou for successfully placing an order!');
   };
+
+  const bakeryOptions = ['Nik Bakers', 'Bakers Lounge', 'OvenFresh', 'Bakers Oven', 'Cheesecake and co.', 'Winni Cakes', 'Bakingo', 'Belgian Waffle', 'The Crown Patisserie', 'Super Donuts'];
 
   return (
     <div id="order" className="order">
@@ -43,12 +46,12 @@ function Order() {
               </Col>
               <Col>
               <Form.Group>
-                <Form.Label>Email</Form.Label>
+                <Form.Label>Contact</Form.Label>
                 <Form.Control
-                  type="email"
-                  name="email"
-                  placeholder="Enter your Email..."
-                  value={Data.email}
+                  type="text"
+                  name="contact"
+                  placeholder="Enter your Contact No..."
+                  value={Data.contact}
                   onChange={handleChange}
                 />
               </Form.Group>
@@ -63,6 +66,21 @@ function Order() {
                   value={Data.address}
                   onChange={handleChange}
                 />
+              </Form.Group><br/>
+              <Form.Group>
+                <Form.Label>Name of Bakery</Form.Label>
+                <Form.Control
+                  as="select"
+                  name="bakery"
+                  value={Data.bakery}
+                  onChange={handleChange}
+                >
+                <option value="">-- Select a Bakery --</option>
+                  {bakeryOptions.map((bakery, index) => (
+                    <option key={index} value={bakery}>
+                      {bakery}
+                    </option>
+                  ))}</Form.Control>
               </Form.Group><br/>
               <Form.Group>
                 <Form.Label>Message</Form.Label>
@@ -82,9 +100,9 @@ function Order() {
         </Row><br/>
         <Row>
           <Col>
-          <h2>Visit Us</h2>
+          <h2>Location</h2>
           <iframe
-              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112131.26437818067!2d77.09423579726564!3d28.566699299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3d9a7f9b20b%3A0xa7319c21104a302c!2sNikon%20Experience%20Zone!5e0!3m2!1sen!2sin!4v1691576485817!5m2!1sen!2sin`}
+              src={`https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d51559.27578300563!2d76.6833836254811!3d30.717555159820634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbakery!5e0!3m2!1sen!2sin!4v1698055427739!5m2!1sen!2sin`}
               width="100%"
               height="400"
               style={{border: 0}}
