@@ -36,6 +36,7 @@ function App() {
         </div>
         <About />
         <Catalog />
+        <Order />
       </div>
       <Footer />
     </div>
