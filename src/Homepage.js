@@ -36,7 +36,7 @@ const Homepage = ({user}) => {
               <Carousel.Item>
                 <Image
                   className="d-block w-100"
-                  src="c3.jpeg" 
+                  src="c3.jpg" 
                   alt="Third slide"
                 />
               </Carousel.Item>
