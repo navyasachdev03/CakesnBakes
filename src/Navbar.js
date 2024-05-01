@@ -1,6 +1,9 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   return (
@@ -10,11 +13,12 @@ function Navbar() {
         <h5 className="h5">Cakes'n'Bakes</h5> 
       </div>
       <div className="navbar-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#catalog">Catalog</a>
-        <a href="#order">Order</a>
-        <a href="#account">Account</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/catalog">Catalog</Link>
+        <Link to="/order">Order</Link>
+        <Link to="/account">Account</Link>
+        <Link to="/cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
       </div>
     </div>
 
@@ -22,4 +26,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
