@@ -1,15 +1,18 @@
-.catalog {
+.catalog, #cart {
     background-color: #f5f5f5;
     padding: 50px 0;
     text-align: center;
+    margin-top: 50px;
 }
+
   
 .ex{
     margin-left: 200px;
 }
+
 .catalog-cell {
-    height: 300px;
-    width: 200px;
+    height: 360px;
+    width: 230px;
     background-color: white;
     border: 1px solid #ddd;
     margin: 5px;
@@ -48,6 +51,27 @@
     font-size: 1.3lvw;
     opacity: 0; 
     animation: fadeIn 0.3s ease forwards; 
+  }
+
+  .text-overlay button, #cart button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .text-overlay button:hover, #cart button:hover{
+    cursor: pointer;
+  }
+
+  .x{
+    font-size: 30px;
+    margin-top: 130px;
+    margin-left: 30px;
+  }
+
+  .m{
+    margin-bottom: 150px;
   }
 
   @keyframes fadeIn {
