@@ -1,15 +1,13 @@
 .footer {
     background-color: #333;
     color: white;
-    padding-top: 20px;
+    padding: 20px;
     margin-bottom: 0;
   }
   
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 40px;
   }
   
   .footer-contact,
@@ -17,10 +15,6 @@
   .footer-social,
   .footer-payment {
     flex: 1;
-  }
-
-  .footer-social{
-    margin-right: -150px;
   }
 
   .footer h6 {
@@ -49,5 +43,13 @@
   
   .footer a:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content{
+      flex-direction: column;
+      gap: 20px;
+      margin-left: 20%;
+    }
   }
   

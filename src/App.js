@@ -1,13 +1,13 @@
 import React, {useState, useRef} from 'react';
 import './App.css';
-import Homepage from './Homepage';
-import Navbar from './Navbar';
-import About from './About';
-import Catalog from './Catalog';
-import Order from './Order';
-import Footer from './Footer';
-import Account from './Account';
-import Cart from './Cart';
+import Homepage from './pages/Homepage/Homepage';
+import Navbar from './components/Navbar/Navbar';
+import About from './pages/About/About';
+import Catalog from './pages/Catalog/Catalog';
+import Order from './pages/Order/Order';
+import Footer from './components/Footer/Footer';
+import Account from './pages/Account/Account';
+import Cart from './pages/Cart/Cart';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
 function App() {

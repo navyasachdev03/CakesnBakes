@@ -44,7 +44,7 @@ const Account = ({ onLogin, onLogout }) => {
 
   return (
     <div id="account" className="account">
-      <div className="down"><Image src="ac.jpg" className="account-image" /></div>
+      <div className="down"><Image src="assets/ac.jpg" className="account-image" /></div>
       <div className="up">
       <h2>{isLogin ? 'Login' : 'Sign Up'}</h2>
       <input

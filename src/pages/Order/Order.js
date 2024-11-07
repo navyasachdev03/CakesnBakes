@@ -96,7 +96,7 @@ function Order() {
               <Button type="submit">Submit</Button>
             </Form>
           </Col>
-          <Image src="o1.png" className="oimg"/>
+          <Image src="assets/o1.png" className="oimg"/>
         </Row><br/>
         <Row>
           <Col>

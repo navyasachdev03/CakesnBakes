@@ -1,0 +1,94 @@
+.bakery-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bakery-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bakery-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.abc {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.bakery-name {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.star {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.bakery-rate {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.bakery-desc {
+    font-size: 0.95em;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.bakery-location {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.bakery-map {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 0;
+}
+
+@media (max-width: 428px) {
+    .bakery-container {
+        flex-direction: column;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .bakery-image {
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px 0;
+    }
+
+    .abc {
+        margin: 0;
+    }
+
+}

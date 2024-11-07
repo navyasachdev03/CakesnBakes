@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import '../../App.css';
 
 const SearchBar = ({ onSearch }) => {
   const headings = ['Craving for something Sweet?', 'Baking gone wrong?', 'Sweet tooth?'];
@@ -34,7 +34,7 @@ const SearchBar = ({ onSearch }) => {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search for Bakery Items"
+        placeholder="Search for Bakery Items..."
       />
       <button onClick={handleSearch}>Search</button>
       </div>

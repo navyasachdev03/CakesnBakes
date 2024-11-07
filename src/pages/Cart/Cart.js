@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'react-bootstrap/Image';
 import { Container, Row, Col } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import './Catalog.css';
+import '../Catalog/Catalog.css';
 import { useNavigate } from 'react-router-dom';
 
 function Cart({ cartItems, removeFromCart }) {

@@ -1,0 +1,23 @@
+const bakeries = [
+    { id: 1, name: 'The Baker Smith', location: 'Sector 22, Chandigarh', rating: '4.9', image: 'b1.jpg', desc: 'Cakes, Chocolates, Cookies, Breads, Pastries, Macarons', map: 'pb=!1m18!1m12!1m3!1d27441.34564087359!2d76.74015884364876!3d30.713671373948625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed4a89931c11%3A0xd45dbe067dd3a290!2sThe%20Baker%20Smith%20%7C%20Customized%20Wedding%20Cake%20Delivery%20In%20Chandigarh%20Mohali%20Panchkula%20Kharar%20Zirakpur%20%7CBest%20Bakery%20In%20Chandigarh!5e0!3m2!1sen!2sin!4v1731011454151!5m2!1sen!2sin' },
+
+    { id: 2, name: 'Cocoamore', location: 'Sector 13, Chandigarh', rating: '4.5', image: 'b2.avif', desc: 'Cakes, Desserts, Cookies, Pastries, Muffins', map: 'pb=!1m18!1m12!1m3!1d12073.49682114343!2d76.81938256195187!3d30.71397082765709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f93635c3321bf%3A0x6e559b7a82fdd411!2sCocoamore!5e0!3m2!1sen!2sin!4v1731012378858!5m2!1sen!2sin' },
+
+    { id: 3, name: 'AM Bakers', location: 'Sector 15, Chandigarh', rating: '4.5', image: 'b3.jpg', desc: 'Cakes, Chocolates, Desserts, Pastries, Cupcakes', map: 'pb=!1m18!1m12!1m3!1d3428.685992442353!2d76.77097177588544!3d30.75532067457343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed767c7fea77%3A0xe7c151c78e52b5ff!2sAM%20Bakers%20-%20Best%20Homemade%20Cake%20%7C%20Best%20Eggless%20Cake%20%7C%20Best%20Customized%20Cake%7C%20Cake%20for%20Pets%20in%20Chandigarh!5e0!3m2!1sen!2sin!4v1731012467629!5m2!1sen!2sin' },
+
+    { id: 4, name: 'Bakers Atelier', location: 'Sector 19, Chandigarh', rating: '4.3', image: 'b4.webp', desc: 'Cakes, Cookies, Breads, Desserts, Muffins', map: 'pb=!1m18!1m12!1m3!1d3429.6247493009464!2d76.78765297588448!3d30.72894807458615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedee30da0189%3A0x472ede16572173f8!2sBakers%20Atelier%20by%20Shruti!5e0!3m2!1sen!2sin!4v1731012498250!5m2!1sen!2sin' },
+
+    { id: 5, name: 'ChocoBliss', location: 'Sector 15, Panchkula', rating: '4.8', image: 'b5.avif', desc: 'Cakes, Cookies, Breads, Chocolates, Macarons', map: 'pb=!1m18!1m12!1m3!1d3431.079828211058!2d76.83629707588304!3d30.688029974605797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f93a96f6d7a09%3A0x8c8c8a4ebda09e27!2sChocoBliss%20-%20Homemade%20Bakery!5e0!3m2!1sen!2sin!4v1731012513024!5m2!1sen!2sin' },
+
+    { id: 6, name: 'Jasleen Cakery', location: 'Sector 44, Chandigarh', rating: '4.3', image: 'b6.avif', desc: 'Cakes, Chocolates, Cookies, Pastries, Cupcakes', map: 'pb=!1m18!1m12!1m3!1d3430.0380329823984!2d76.75236157588408!3d30.71733117459161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedd272d09c6d%3A0x4674b907d7d8df41!2sJasleen%20Cakery(Home%20Bakery)!5e0!3m2!1sen!2sin!4v1731012546434!5m2!1sen!2sin' },
+
+    { id: 7, name: 'Curl Gurl Bakes', location: 'Sector 19, Chandigarh', rating: '4.7', image: 'b7.webp', desc: 'Cakes, Chocolates, Cupcakes, Muffins, Macarons', map: 'pb=!1m18!1m12!1m3!1d3429.764561259629!2d76.78941757588437!3d30.72501857458802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feda54db4e875%3A0x6a55792ca1f7929!2sCURL%20GURL%20BAKES!5e0!3m2!1sen!2sin!4v1731012555640!5m2!1sen!2sin' },
+
+    { id: 8, name: 'Palaks Cakes n Bakes', location: 'Sector 4, Panchkula', rating: '4.7', image: 'b8.jpg', desc: 'Cakes, Chocolates, Pastries, Donuts, Cupcakes', map: 'pb=!1m18!1m12!1m3!1d3431.0087615688976!2d76.85479787588307!3d30.69002957460491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f938f28bf65a1%3A0x52006ccea68a54bc!2sPalaks%20Cakes%20n%20Bakes!5e0!3m2!1sen!2sin!4v1731012566849!5m2!1sen!2sin' },
+
+    { id: 9, name: 'Home Bakes By Geetu', location: 'Sector 85, Mohali', rating: '4.6', image: 'b9.jpg', desc: 'Cakes, Cupcakes, Breads, Desserts, Donuts', map: 'pb=!1m18!1m12!1m3!1d3431.946170185882!2d76.69869357588219!3d30.663644274617724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910114235b16dbb%3A0x692f371f23eb3ae2!2sHome%20Bakes%20By%20Geetu%20%7C%20Best%20Home%20Baker%20In%20Mohali%20%7C%20Best%20Cakes%20In%20Mohali!5e0!3m2!1sen!2sin!4v1731012601021!5m2!1sen!2sin' },
+
+    { id: 10, name: 'Singh Bakers', location: 'Sector 11, Panchkula', rating: '4.9', image: 'b10.jpg', desc: 'Cakes, Chocolates, Donuts, Breads, Pastries', map: 'pb=!1m18!1m12!1m3!1d3431.046342539333!2d76.85019197588305!3d30.688972174605386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f9366e64a2fe9%3A0x568cb31ce52b9eb!2sSingh%20Bakers!5e0!3m2!1sen!2sin!4v1731012612849!5m2!1sen!2sin' },
+];
+
+export default bakeries;

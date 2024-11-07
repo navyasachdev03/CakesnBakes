@@ -9,7 +9,7 @@ function About() {
       <Container className="ex1">
         <Row>
           <Col md={4} className="about-cell">
-            <Image src="a1.avif" className="about-image" />
+            <Image src="assets/a1.avif" className="about-image" />
           </Col>
           <Col md={4} className="about-cell">
             <h2>From the Admin</h2>
@@ -36,7 +36,7 @@ function About() {
             </p>
           </Col>
           <Col md={4} className="about-cell">
-            <Image src="a2.avif" className="about-image" />
+            <Image src="assets/a2.avif" className="about-image" />
           </Col>
         </Row>
       </Container>
