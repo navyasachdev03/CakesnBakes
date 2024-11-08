@@ -1,39 +1,111 @@
 .order {
-    background-color: #fff9e9;
-    padding: 50px 0;
-    margin-top: 50px;
-  }
-  
-  .order form {
-    background-color: #fff;
+  background-color: #fff9e9;
+  padding: 50px 20px;
+  margin-top: 50px;
+  min-height: 78vh;
+}
+
+.order h2{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.order form {
+  width: 80%;
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+.order form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.order form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order form .form-control:focus {
+  border-color: #6a6a6a;
+  box-shadow: 0 0 5px rgba(106, 106, 106, 0.3);
+  outline: none;
+}
+
+.order form select.form-control {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%236a6a6a" d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.order form textarea.form-control {
+  resize: none;
+}
+
+.order form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.order form button:hover {
+  background-color: #6a6a6a;
+  cursor: pointer;
+}
+
+
+.oimg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px){
+
+  .order{
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-  }
-  
-  .order form label {
-    font-weight: bold;
-  }
-  
-  .order form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .order form button {
-    background-color: #333;
-    color: white;
-    width: 20%;
-  }
-  
-  .order form button:hover {
-    background-color: #6a6a6a;
-    cursor: pointer;
   }
 
-  .oimg{
-    height: 470px;
-    width: 370px;
-    float: right;
-    margin-left: 120px;
+  .order form{
+    width: 100%;
   }
-  
+
+}
+@media (min-width: 768px) {
+
+  .oimg {
+      height: 450px;
+      width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .order {
+      padding: 20px;
+  }
+
+  .order form button {
+      width: 100%;
+  }
+
+  .oimg {
+    display: none;
+}
+}

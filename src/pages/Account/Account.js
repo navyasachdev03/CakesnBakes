@@ -10,14 +10,12 @@ const Account = ({ onLogin, onLogout }) => {
   const handleLogin = () => {
     let storedUser = localStorage.getItem('user');
     storedUser = storedUser ? JSON.parse(storedUser) : {};
-    console.log(storedUser);
     if (storedUser.username === username && storedUser.password === password) {
       onLogin(storedUser.username);
       setUsername('');
       setPassword('');
       alert('Login successful');
-    } 
-    else {
+    } else {
       alert('Invalid credentials');
     }
   };
@@ -44,35 +42,35 @@ const Account = ({ onLogin, onLogout }) => {
 
   return (
     <div id="account" className="account">
-      <div className="down"><Image src="assets/ac.jpg" className="account-image" /></div>
+      <div className="down">
+        <Image src="assets/ac.jpg" className="account-image" />
+      </div>
       <div className="up">
-      <h2>{isLogin ? 'Login' : 'Sign Up'}</h2>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      /><br/>
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      /><br/>
-      {isLogin ? (
-        <button onClick={handleLogin}>Login</button>
-      ) : (
-        <button onClick={handleSignup}>Sign Up</button>
-      )}
-      <p onClick={() => setIsLogin(!isLogin)}>
-        {isLogin ? 'Create an account' : 'Already have an account?'}
-      </p>
-      <button onClick={handleLogout}>Logout</button>
+        <h2>{isLogin ? 'Login' : 'Sign Up'}</h2>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        {isLogin ? (
+          <button onClick={handleLogin}>Login</button>
+        ) : (
+          <button onClick={handleSignup}>Sign Up</button>
+        )}
+        <p onClick={() => setIsLogin(!isLogin)}>
+          {isLogin ? 'Create an account' : 'Already have an account?'}
+        </p>
+        {isLogin && <button onClick={handleLogout}>Logout</button>}
       </div>
     </div>
   );
 };
-
-
 
 export default Account;

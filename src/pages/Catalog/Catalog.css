@@ -1,81 +1,148 @@
-.catalog, #cart {
-    background-color: #f5f5f5;
-    padding: 50px 0;
-    text-align: center;
-    margin-top: 50px;
+.catalog {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 50px;
 }
 
-  
-.ex{
-    margin-left: 200px;
+.ex {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.r {
+  align-items: center;
+  justify-content: center;
 }
 
 .catalog-cell {
-    height: 360px;
-    width: 230px;
-    background-color: white;
-    border: 1px solid #ddd;
-    margin: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.catalog-cell:hover .text-overlay{
-    cursor: pointer;
-    display: block;
+.catalog-cell:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-  
+
 .catalog-image {
-    margin-bottom: 5px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); 
-    color: white;
-    padding-top: 10lvw;
-    text-align: center;
-    display: none;
-    font-weight: bold;
-    font-size: 1.3lvw;
-    opacity: 0; 
-    animation: fadeIn 0.3s ease forwards; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.catalog-cell:hover .text-overlay {
+  opacity: 1;
+}
+
+.text-overlay button, .m {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.text-overlay button:hover, .m:hover {
+  background-color: #ebebeb;
+}
+
+.catalog-cell p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (min-width: 992px) {
+  .catalog-cell {
+    flex: 0 0 22%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .catalog-cell {
+    flex: 0 0 42%;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-cell {
+    flex: 0 0 60%;
+  }
+}
+
+@media (max-width: 442px) {
+  .catalog-cell {
+    flex: 0 0 80%;
+  }
+}
+
+@media (max-width: 358px) {
+  .catalog-cell {
+    flex: 0 0 100%;
+  }
+}
+
+
+#cart {
+  background-color: #f5f5f5;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.x {
+  font-size: 30px;
+}
+
+.cart-img {
+  width: 250px;
+  height: auto;
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .x {
+    font-size: 25px;
   }
 
-  .text-overlay button, #cart button{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
+  .cart-img {
+    width: 210px;
+    margin-top: 40px;
   }
-
-  .text-overlay button:hover, #cart button:hover{
-    cursor: pointer;
-  }
-
-  .x{
-    font-size: 30px;
-    margin-top: 130px;
-    margin-left: 30px;
-  }
-
-  .m{
-    margin-bottom: 150px;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
+}

@@ -26,6 +26,7 @@ function Cart({ cartItems, removeFromCart }) {
     return (
       <div id="cart">
         <h2>Cart</h2>
+        <img src='assets/cart.png' className='cart-img'></img>
         <p className='x'>Your cart is Empty!</p>
         <button onClick={() => moveToCatalog()} className='m'>Order Now</button>
       </div>
@@ -39,7 +40,7 @@ function Cart({ cartItems, removeFromCart }) {
         <Row>
           {cartItems.map((item) => (
             <Col key={item.id} md={2} className="catalog-cell">
-              <Image src={item.image} className="catalog-image" />
+              <Image src={`assets/${item.image}`} className="catalog-image" />
               <div className="text-overlay">
                 <button onClick={() => handleRemoveFromCart(item)}>Remove from Cart</button>
               </div>
